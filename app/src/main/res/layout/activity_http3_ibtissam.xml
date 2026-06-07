@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_http3_ibtissam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_ibtissam"
+    android:padding="16dp"
+    tools:context=".Http3Activity_ibtissam">
+
+    <TextView
+        android:id="@+id/tvTitle_http3_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ibtissam"
+        android:padding="4dp"
+        android:text="Test HTTP/3-QUIC"
+        android:textColor="@color/primary_text_ibtissam"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription_http3_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="HTTP/3 utilise QUIC, un protocole basé sur UDP qui combine transport et sécurité dans une seule couche."
+        android:textColor="@color/primary_text_ibtissam"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle_http3_ibtissam" />
+
+    <TextView
+        android:id="@+id/tvResult_http3_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Test en cours..."
+        android:textColor="@color/primary_text_ibtissam"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription_http3_ibtissam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

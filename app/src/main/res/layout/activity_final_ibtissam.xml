@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_ibtissam"
+    android:padding="16dp"
+    tools:context=".FinalActivity_ibtissam">
+
+    <TextView
+        android:id="@+id/tvTitle_final_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ibtissam"
+        android:padding="4dp"
+        android:text="Atelier Final - Sécurité Complète"
+        android:textColor="@color/primary_text_ibtissam"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription_final_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cette activité combine TLS moderne, mTLS, Certificate Pinning et DoH."
+        android:textColor="@color/primary_text_ibtissam"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle_final_ibtissam" />
+
+    <EditText
+        android:id="@+id/etUrl_final_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Entrez une URL (https://...)"
+        android:textColor="@color/primary_text_ibtissam"
+        android:textColorHint="#88FFFFFF"
+        android:inputType="textUri"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription_final_ibtissam" />
+
+    <Button
+        android:id="@+id/btnExecute_final_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Exécuter Requête Sécurisée"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/etUrl_final_ibtissam" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnExecute_final_ibtissam">
+
+        <TextView
+            android:id="@+id/tvResult_final_ibtissam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entrez une URL et appuyez sur Exécuter"
+            android:textColor="@color/primary_text_ibtissam"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

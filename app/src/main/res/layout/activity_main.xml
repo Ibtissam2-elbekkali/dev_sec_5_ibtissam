@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ibtissam"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_ibtissam"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ibtissam"
+        android:padding="4dp"
+        android:text="Communication Réseau Sécurisée"
+        android:textColor="@color/primary_text_ibtissam"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ce TP vous permet d'explorer différentes techniques pour sécuriser la communication réseau dans une application Android."
+        android:textColor="@color/primary_text_ibtissam"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle_ibtissam" />
+
+    <Button
+        android:id="@+id/btnHttp3_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="HTTP/3-QUIC"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription_ibtissam" />
+
+    <Button
+        android:id="@+id/btnWebSocket_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="WebSockets"
+        app:layout_constraintTop_toBottomOf="@id/btnHttp3_ibtissam" />
+
+    <Button
+        android:id="@+id/btnMtls_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mutual TLS (mTLS)"
+        app:layout_constraintTop_toBottomOf="@id/btnWebSocket_ibtissam" />
+
+    <Button
+        android:id="@+id/btnDoh_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="DNS-over-HTTPS (DoH)"
+        app:layout_constraintTop_toBottomOf="@id/btnMtls_ibtissam" />
+
+    <Button
+        android:id="@+id/btnCt_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Certificate Transparency"
+        app:layout_constraintTop_toBottomOf="@id/btnDoh_ibtissam" />
+
+    <Button
+        android:id="@+id/btnFinal_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Atelier Final"
+        app:layout_constraintTop_toBottomOf="@id/btnCt_ibtissam" />
+
+    <TextView
+        android:id="@+id/tvFooter_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Réalisé par Ibtissam"
+        android:textColor="@color/primary_text_ibtissam"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

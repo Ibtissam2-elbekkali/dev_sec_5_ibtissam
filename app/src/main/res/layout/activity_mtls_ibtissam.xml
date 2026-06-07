@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_ibtissam"
+    android:padding="16dp"
+    tools:context=".MtlsActivity_ibtissam">
+
+    <TextView
+        android:id="@+id/tvTitle_mtls_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_ibtissam"
+        android:padding="4dp"
+        android:text="Test Mutual TLS (mTLS)"
+        android:textColor="@color/primary_text_ibtissam"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescription_mtls_ibtissam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="mTLS est une forme d'authentification mutuelle où le client et le serveur vérifient l'identité l'un de l'autre."
+        android:textColor="@color/primary_text_ibtissam"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle_mtls_ibtissam" />
+
+    <Button
+        android:id="@+id/btnTestMtls_ibtissam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tester mTLS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription_mtls_ibtissam" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnTestMtls_ibtissam">
+
+        <TextView
+            android:id="@+id/tvResult_mtls_ibtissam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appuyez sur le bouton pour tester mTLS"
+            android:textColor="@color/primary_text_ibtissam"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
